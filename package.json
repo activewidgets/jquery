@@ -1,0 +1,72 @@
+{
+  "name": "@activewidgets/jquery",
+  "version": "0.0.9",
+  "description": "Datagrid component for jQuery",
+  "author": "ActiveWidgets SARL",
+  "license": "MIT",
+  "main": "./dist/umd/package.js",
+  "module": "./dist/esm/package.js",
+  "files": [
+    "dist/*/*.*",
+    "**/package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "public": "npm run build && rimraf public && parcel build examples/index.html -d public",
+    "start": "parcel examples/index.html -d public --open",
+    "test": "npm run public && jest"
+  },
+  "dependencies": {
+    "@activewidgets/datagrid": "0.0.9",
+    "@activewidgets/frameworks": "0.0.9",
+    "jquery": "*",
+    "htm": "2.2.1",
+    "preact": "10.1.1"
+  },
+  "devDependencies": {
+    "@activewidgets/options": "0.0.9",
+    "@activewidgets/puppeteer": "0.0.3",
+    "@activewidgets/testing": "0.0.1",
+    "@babel/core": "^7",
+    "@babel/preset-env": "^7",
+    "@rollup/plugin-node-resolve": "^6",
+    "parcel": "^1",
+    "postcss-import": "^12",
+    "rimraf": "^3",
+    "rollup": "^1.20",
+    "rollup-plugin-babel": "^4",
+    "rollup-plugin-postcss": "^2",
+    "rollup-plugin-sourcemaps": "^0.4",
+    "rollup-plugin-terser": "^5",
+    "style-inject": "^0.3"
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "Unit",
+        "preset": "@activewidgets/testing",
+        "moduleNameMapper": {
+          "@activewidgets/components": "<rootDir>/jquery",
+          "@activewidgets/testing": "<rootDir>/test/adapter/jquery.js"
+        }
+      },
+      {
+        "displayName": "Visual",
+        "preset": "@activewidgets/puppeteer"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/activewidgets/jquery.git"
+  },
+  "keywords": [
+    "datagrid"
+  ],
+  "bugs": {
+    "url": "https://github.com/activewidgets/jquery/issues"
+  },
+  "homepage": "https://github.com/activewidgets/jquery#readme"
+}
