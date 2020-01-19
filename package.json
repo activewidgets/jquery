@@ -48,7 +48,7 @@
         "displayName": "Unit",
         "preset": "@activewidgets/testing",
         "moduleNameMapper": {
-          "@activewidgets/components": "<rootDir>/jquery",
+          "@activewidgets/components": "<rootDir>/js",
           "@activewidgets/testing": "<rootDir>/test/adapter/jquery.js"
         }
       },
