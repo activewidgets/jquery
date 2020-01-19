@@ -53,7 +53,7 @@ function refresh(){
         mode = RegExp.$1;
 
     if (name && typeof lookup[name] == 'function') {
-        lookup[name]({render}, {Datagrid: 'ax-datagrid'}, templates, data);
+        lookup[name]({render}, templates, data);
     }
     else {
         index(name);
