@@ -1,9 +1,9 @@
 ﻿
 import {Viewer} from '@activewidgets/examples';
-import '../../';
+import '@activewidgets/jquery';
 import $ from 'jquery';
 import * as pages from './examples.js';
-import readme from '../README.md';
+import readme from '../demo/README.md';
 import logo from './jquery.svg';
 import pkg from '../../package.json';
 
