@@ -36,6 +36,7 @@
     "@babel/core": "^7",
     "@babel/preset-env": "^7",
     "@rollup/plugin-node-resolve": "^6",
+    "jquery": "^3",
     "postcss-import": "^12",
     "rimraf": "^3",
     "rollup": "^1.20",
