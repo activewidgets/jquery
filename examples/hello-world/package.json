@@ -9,7 +9,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@activewidgets/jquery": "0.0.10",
+    "@activewidgets/jquery": "*",
     "jquery": "*"
   },
   "devDependencies": {
