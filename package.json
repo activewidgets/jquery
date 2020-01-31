@@ -8,22 +8,25 @@
   "module": "./dist/esm/package.js",
   "files": [
     "dist/*/*.*",
-    "**/package.json",
+    "*/package.json",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
     "build": "rimraf dist/* && rollup -c",
     "output": "npm run build && rimraf out/* && build-examples",
+    "prepack": "npm run build && rimraf out/*",
     "start": "serve-examples",
     "test": "npm run output && jest"
   },
   "dependencies": {
     "@activewidgets/datagrid": "0.0.11",
     "@activewidgets/frameworks": "0.0.11",
-    "jquery": "*",
     "htm": "3.0.2",
     "preact": "10.2.1"
+  },
+  "peerDependencies": {
+    "jquery": "*"
   },
   "devDependencies": {
     "@activewidgets/examples": "0.0.5",
