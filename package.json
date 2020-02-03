@@ -70,10 +70,12 @@
     "url": "git+https://github.com/activewidgets/jquery.git"
   },
   "keywords": [
-    "datagrid"
+    "activewidgets",
+    "datagrid",
+    "jquery"
   ],
   "bugs": {
     "url": "https://github.com/activewidgets/jquery/issues"
   },
-  "homepage": "https://github.com/activewidgets/jquery#readme"
+  "homepage": "https://activewidgets.com"
 }
