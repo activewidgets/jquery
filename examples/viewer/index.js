@@ -17,6 +17,13 @@ let framework = 'jQuery',
     container = document.getElementById('app');
 
 
+function wrap(handler){
+    return function(event){
+        handler(event.detail);
+    };
+}
+
+
 function mount(component, props){
 
     let target = document.createElement(component);
@@ -24,7 +31,16 @@ function mount(component, props){
     container.innerHTML = '';
     container.appendChild(target);
 
-    $(target).prop(props).mount();
+    Object.keys(props).forEach(i => {
+        if (i.indexOf('on') === 0){
+            $(target).on(i.slice(2).toLowerCase(), wrap(props[i]));
+        }
+        else {
+            $(target).prop(i, props[i]);
+        }
+    });
+
+    $(target).mount();
 }
 
 
