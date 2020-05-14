@@ -17,5 +17,5 @@ $('ax-datagrid')
 
 Read more:
 
-- [Get started](https://docs.activewidgets.com/guide/starting/jquery/#user-events)
+- [jQuery Datagrid - Get started](https://docs.activewidgets.com/guide/env/jquery/#user-events)
 - [API - mouse event](https://docs.activewidgets.com/api/datagrid/mouse-event/)

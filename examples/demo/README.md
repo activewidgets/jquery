@@ -14,6 +14,8 @@ This is a simple demo showing some of the features of ActiveWidgets datagrid -
 - International number/date formats
 - Custom column types (presets)
 
+[jQuery Datagrid - Get started](https://docs.activewidgets.com/guide/env/jquery/)
+
 ### Virtualized scrolling
 
 The datagrid implements virtualized scrolling - rendering only the visible rows and adding/removing extra rows on the fly 
@@ -141,5 +143,5 @@ like popups, overlays, gantt charts, schedulers etc.
 
 Read more:
 
-- [Get started](https://docs.activewidgets.com/guide/starting/jquery/)
+- [jQuery Datagrid - Get started](https://docs.activewidgets.com/guide/env/jquery/)
 - [API](https://docs.activewidgets.com/api/)

@@ -29,4 +29,4 @@ Thats all!
 
 Read more:
 
- - [Get started](https://docs.activewidgets.com/guide/starting/jquery/)
+ - [jQuery Datagrid - Get started](https://docs.activewidgets.com/guide/env/jquery/)
