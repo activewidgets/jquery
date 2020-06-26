@@ -28,10 +28,10 @@ $('ax-datagrid')
     .mount();
 ```
 
-Assign an array of column descriptor objects to the [columns](https://docs.activewidgets.com/api/datagrid/columns/) property.
+Assign an array of column descriptor objects to the [columns](https://activewidgets.com/api/datagrid/columns/) property.
 
 Read more:
 
-- [jQuery Datagrid - Get started](https://docs.activewidgets.com/guide/env/jquery/#data-properties)
-- [API - columns](https://docs.activewidgets.com/api/datagrid/columns/)
-- [API - rows](https://docs.activewidgets.com/api/datagrid/rows/)
+- [jQuery Datagrid - Get started](https://activewidgets.com/guide/env/jquery/#data-properties)
+- [API - columns](https://activewidgets.com/api/datagrid/columns/)
+- [API - rows](https://activewidgets.com/api/datagrid/rows/)
