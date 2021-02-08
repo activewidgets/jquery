@@ -37,7 +37,7 @@
     "@babel/preset-env": "^7",
     "@rollup/plugin-babel": "^5",
     "@rollup/plugin-node-resolve": "^11",
-    "@testing-library/preact": "^2",
+    "@testing-library/dom": "^7",
     "express": "^4",
     "jquery": "^3",
     "marked": "^1",
