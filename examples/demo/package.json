@@ -5,8 +5,8 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "vite --open /",
+    "build": "vite build"
   },
   "dependencies": {
     "@activewidgets/examples": "*",
@@ -15,7 +15,7 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "parcel-bundler": "^1"
+    "vite": "^2.0.0-beta.70"
   },
   "private": true
 }
