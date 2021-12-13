@@ -22,36 +22,9 @@ const columns = [
     { header: 'Order Date', type: 'date', field: 'date' }
 ];
 
-
 const rows = northwind.customers;
-
-
-function onRow(row){
-
-    const {data, cells} = row;
-
-    // calculated values
-    cells.amount = 2000 * Math.random();
-    cells.date = Date.now() - 500 * 86400000 * Math.random();
-
-
-    // dynamic row style
-    if (data.country === 'France'){
-        row.class = 'bg-green';
-    }
-
-    // dynamic cell styles
-    if (data.city === 'London'){
-        cells.address = {class: 'circle'};
-    }
-
-    if (data.contactTitle === 'Owner'){
-        cells.contact = {class: 'star'};
-    }
-}
 
 
 $('ax-datagrid')
     .prop({columns, rows, templates, options})
-    .on('row', e => onRow(e.detail))
     .mount();
