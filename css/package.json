@@ -1,5 +1,5 @@
 {
-  "name": "@activewidgets/js/css",
+  "name": "@activewidgets/jquery/css",
   "main": "../dist/umd/css.js",
   "module": "../dist/esm/css.js",
   "private": true

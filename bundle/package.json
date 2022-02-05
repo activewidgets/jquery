@@ -1,5 +1,5 @@
 {
-  "name": "@activewidgets/html/bundle",
+  "name": "@activewidgets/jquery/bundle",
   "main": "../dist/umd/bundle.js",
   "module": "../dist/esm/bundle.js",
   "private": true
