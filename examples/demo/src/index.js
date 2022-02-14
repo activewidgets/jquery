@@ -24,7 +24,13 @@ const columns = [
 
 const rows = northwind.customers;
 
+function calc(){
+    return () => ({
+        amount: 2000 * Math.random(),
+        date: Date.now() - 500 * 86400000 * Math.random()
+    });
+}
 
 $('ax-datagrid')
-    .prop({columns, rows, templates, options})
+    .prop({columns, rows, calc, templates, options})
     .mount();

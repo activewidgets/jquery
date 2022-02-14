@@ -16,6 +16,9 @@ export function mount(component, props){
         if (i.slice(0, 2) == 'on'){
             $el.on(i.slice(2).toLowerCase(), event => props[i](event.detail));
         }
+        else if (typeof props[i] == 'function'){
+            $el.prop(i, () => props[i]);
+        }
         else {
             $el.prop(i, props[i]);
         }
