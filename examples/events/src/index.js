@@ -10,12 +10,23 @@ import { columns, rows } from "@activewidgets/examples/data";
 import './styles.css';
 
 
-function onMouse({row}){
-    alert(`row ${row.key} clicked!`);
+let gridAPI;
+
+function onInit(event){
+    gridAPI = event.detail;
+}
+
+
+function onClick(event){
+    let cell = gridAPI.cellFromElement(event.target); 
+    if (cell && cell.section === 'main') {
+        alert(`row ${cell.row.index + 1} clicked!`);
+    }
 }
 
 
 $('ax-datagrid')
     .prop({ columns, rows })
-    .on('mouse', event => onMouse(event.detail))
+    .on('init', onInit)
+    .on('click', onClick)
     .mount();
