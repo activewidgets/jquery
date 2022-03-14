@@ -35,6 +35,9 @@ function mount(component, props){
         if (i.indexOf('on') === 0){
             $(target).on(i.slice(2).toLowerCase(), wrap(props[i]));
         }
+        else if (typeof props[i] == 'function'){
+            $(target).prop(i, () => props[i]);
+        }
         else {
             $(target).prop(i, props[i]);
         }
