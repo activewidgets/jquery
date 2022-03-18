@@ -56,7 +56,7 @@ $('ax-datagrid')
     .mount();
 ```
 
-[Live example](https://jquery.activewidgets.com/examples/local/hello-world/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/hello-world) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/jquery/tree/master/examples/hello-world)
+[Live example](https://jquery.activewidgets.com/hello-world/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/hello-world) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/jquery/tree/master/examples/hello-world?file=src/index.js)
 
 
 ## CDN links
@@ -67,7 +67,7 @@ For quick prototyping the package is also available over ActiveWidgets CDN -
 <script src="https://cdn.activewidgets.com/jquery"></script>
 ```
 
-[Live example](https://jquery.activewidgets.com/examples/local/cdn-es5/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/cdn-es5) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/jquery/tree/master/examples/cdn-es5)
+[Live example](https://jquery.activewidgets.com/examples/local/cdn-es5/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/cdn-es5) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/jquery/tree/master/examples/cdn-es5)
 
 
 ## Mount function
@@ -116,7 +116,7 @@ $('ax-datagrid')
     .mount();
 ```
 
-[Live example](https://jquery.activewidgets.com/examples/local/columns/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/columns) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/jquery/tree/master/examples/columns)
+[Live example](https://jquery.activewidgets.com/columns/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/columns) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/jquery/tree/master/examples/columns?file=src/index.js)
 
 
 ## User events
@@ -135,7 +135,7 @@ $('ax-datagrid')
     .mount();
 ```
 
-[Live example](https://jquery.activewidgets.com/examples/local/events/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/events) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/jquery/tree/master/examples/events)
+[Live example](https://jquery.activewidgets.com/events/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/events) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/jquery/tree/master/examples/events?file=src/index.js)
 
 When assigning an event handler, note that the event data is passed in the `event.detail` property (we are using DOM CustomEvent class).  
 

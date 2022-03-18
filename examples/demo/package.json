@@ -10,12 +10,17 @@
   },
   "dependencies": {
     "@activewidgets/examples": "*",
-    "@activewidgets/jquery": "*",
-    "@activewidgets/options": "*",
+    "@activewidgets/jquery": "^3",
+    "@activewidgets/options": "^3",
     "jquery": "*"
   },
   "devDependencies": {
     "vite": "^2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activewidgets/jquery.git",
+    "directory": "examples/demo"
   },
   "private": true
 }

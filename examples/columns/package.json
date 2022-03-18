@@ -10,11 +10,16 @@
   },
   "dependencies": {
     "@activewidgets/examples": "*",
-    "@activewidgets/jquery": "*",
+    "@activewidgets/jquery": "^3",
     "jquery": "*"
   },
   "devDependencies": {
     "vite": "^2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activewidgets/jquery.git",
+    "directory": "examples/columns"
   },
   "private": true
 }

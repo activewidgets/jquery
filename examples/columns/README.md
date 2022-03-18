@@ -1,5 +1,5 @@
 
-[Open fullscreen](/columns/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/columns) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/jquery/tree/master/examples/columns)
+[Open fullscreen](https://jquery.activewidgets.com/columns/) | [Source on github](https://github.com/activewidgets/jquery/tree/master/examples/columns) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/jquery/tree/master/examples/columns?file=src/index.js)
 
 This example shows how to configure datagrid columns:
 
