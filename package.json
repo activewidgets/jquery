@@ -18,7 +18,7 @@
     "prepack": "npm run build && rimraf out/*",
     "preview": "npm run examples && vite preview --open /",
     "start": "vite --open /",
-    "test": "npm run examples && jest"
+    "test": "npm run examples && vitest run"
   },
   "dependencies": {
     "@activewidgets/datagrid": "3.1.5",
@@ -32,13 +32,9 @@
   "devDependencies": {
     "@activewidgets/examples": "0.0.16",
     "@activewidgets/options": "3.1.5",
-    "@activewidgets/puppeteer": "0.0.6",
-    "@babel/core": "^7",
-    "@babel/preset-env": "^7",
-    "@rollup/plugin-babel": "^5",
+    "@activewidgets/puppeteer": "0.1.0",
     "@rollup/plugin-node-resolve": "^13",
     "@testing-library/dom": "^8",
-    "express": "^4",
     "jquery": "^3",
     "rimraf": "^3",
     "rollup": "^2",
@@ -47,14 +43,14 @@
     "rollup-plugin-sourcemaps": "^0.6",
     "rollup-plugin-terser": "^7",
     "style-inject": "^0.3",
-    "vite": "^2"
+    "vite": "^3"
   },
-  "jest": {
-    "preset": "@activewidgets/puppeteer"
+  "overrides": {
+    "jest": "npm:style-inject"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/activewidgets/jquery.git"
+    "url": "https://github.com/activewidgets/jquery.git"
   },
   "keywords": [
     "activewidgets",
