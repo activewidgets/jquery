@@ -5,9 +5,9 @@
  */
 
 import $ from 'jquery';
-import '@activewidgets/jquery';
+import { tpl } from "@activewidgets/jquery";
 import { northwind } from '@activewidgets/examples/data';
-import * as templates from './templates';
+import * as flags from '@activewidgets/examples/flags';
 import options from './options';
 import './styles.css';
 
@@ -31,6 +31,32 @@ function calc(){
     });
 }
 
+const slots = {
+    
+    company: ({data}) => tpl`<div>
+        <div class="bold blue">${data.customerID}</div>
+        <div class="small">${data.companyName}</div>
+    </div>`,
+    
+    contact: ({data}) => tpl`<div>
+        <div class="bold">${data.contactName}</div>
+        <div class="small">${data.contactTitle}</div>
+    </div>`,
+    
+    address: ({data}) => tpl`<div>
+        <div class="small">${data.address}</div>
+        <div class="small">${data.postalCode} <span>${data.city}</span></div>
+    </div>`,
+    
+    country: ({text}) => tpl`<div><img src=${flags[text]}/>${text}</div>`,
+    
+    phone: ({data}) => tpl`<div>
+        <div class="small phone">${data.phone}</div>
+        <div class="small fax">${data.fax}</div>
+    </div>`
+};
+
 $('ax-datagrid')
-    .prop({columns, rows, calc, templates, options})
+    .prop({columns, rows, calc, options})
+    .slots(slots)
     .mount();
