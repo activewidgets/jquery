@@ -6,8 +6,8 @@
 
 import adapter from '@activewidgets/frameworks/jquery';
 import $ from 'jquery';
-import {Component, cloneElement, createElement, isValidElement, render} from 'preact';
+import {Component, cloneElement, createElement, isValidElement, createContext, render} from 'preact';
 import htm from 'htm';
 
-export const {h, build} = adapter({Component, cloneElement, createElement, isValidElement, render}, $);
+export const {h, build} = adapter({Component, cloneElement, createElement, isValidElement, createContext, render}, $);
 export const tpl = htm.bind(h);
