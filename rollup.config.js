@@ -19,7 +19,6 @@ let globals = {
     '@activewidgets/frameworks/jquery': 'ActiveWidgets.Frameworks.jQuery',
     '@activewidgets/datagrid/js': 'ActiveWidgets.Components',
     '@activewidgets/datagrid/style': 'ActiveWidgets.Styles',
-    '@activewidgets/datagrid/dist/datagrid.css': '',
     '@activewidgets/datagrid/css': ''
 };
 
