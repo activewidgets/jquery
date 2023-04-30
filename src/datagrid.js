@@ -5,7 +5,7 @@
  */
 
 import {jQueryComponent} from './framework.js';
-import {Datagrid, Row, Cells} from '@activewidgets/datagrid/js';
+import {Datagrid, Row, Cells} from '@activewidgets/datagrid';
 
 jQueryComponent(Datagrid);
 jQueryComponent(Row);
